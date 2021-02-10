@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profAvatar"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:background="@color/shimmer_gray" />
+
+    <TextView
+        android:id="@+id/detailsGroupName"
+        android:layout_width="@dimen/shimmer_details_group_width"
+        android:layout_height="@dimen/shimmer_details_group_height"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/socialIconMargin"
+        android:layout_toEndOf="@id/profAvatar"
+        android:background="@color/shimmer_gray"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detailsPostDate"
+        android:layout_width="@dimen/shimmer_text_width"
+        android:layout_height="@dimen/shimmer_text_height"
+        android:layout_below="@id/detailsGroupName"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/socialIconMargin"
+        android:layout_toEndOf="@id/profAvatar"
+        android:background="@color/shimmer_gray"
+        android:textSize="@dimen/dateSize" />
+
+    <TextView
+        android:id="@+id/detailsPostText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shimmer_post_text_width"
+        android:layout_below="@+id/profAvatar"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:background="@color/shimmer_gray"
+        android:padding="@dimen/defaultMargin"
+        android:textSize="@dimen/description_text_size"/>
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="com.vkpractice.app.ui.layouts.PostTextLayout">
+
+    <View
+        android:id="@+id/titleBackGround"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:background="@color/shimmer_gray" />
+
+    <ImageView
+        android:id="@+id/groupAvatar"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"/>
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/postDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:textSize="@dimen/dateSize"/>
+
+    <TextView
+        android:id="@+id/postText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:textSize="@dimen/default_text_size"/>
+
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/viewsCountIcon"
+        android:layout_width="@dimen/socialIconWidth"
+        android:layout_height="@dimen/socialIconWidth"
+        android:layout_marginStart="@dimen/socialIconMargin"
+        android:layout_marginEnd="@dimen/socialIconMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"/>
+
+    <TextView
+        android:id="@+id/viewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/countPaddingTop"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:textSize="14sp"/>
+
+    <ImageButton
+        android:id="@+id/likeBtn"
+        android:layout_width="@dimen/socialIconWidth"
+        android:layout_height="@dimen/socialIconWidth"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"/>
+
+    <TextView
+        android:id="@+id/likesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/countPaddingTop"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:textSize="@dimen/postTextSize"/>
+
+    <ImageButton
+        android:id="@+id/commentsBtn"
+        android:layout_width="@dimen/socialIconWidth"
+        android:layout_height="@dimen/socialIconWidth"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"/>
+
+    <TextView
+        android:id="@+id/commentsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/countPaddingTop"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:textSize="@dimen/postTextSize"/>
+</merge>

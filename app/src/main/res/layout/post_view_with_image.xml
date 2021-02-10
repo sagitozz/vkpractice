@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="com.vkpractice.app.ui.layouts.PostWithImageLayout">
+
+    <View
+        android:id="@+id/titleBackGround"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:background="@color/shimmer_gray" />
+
+    <ImageView
+        android:id="@+id/groupAvatar"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"/>
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:maxLines="2"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/postDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:textSize="@dimen/dateSize"/>
+
+    <TextView
+        android:id="@+id/postText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:textSize="@dimen/default_text_size"/>
+
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+        android:id="@+id/viewsCountIcon"
+        android:layout_width="@dimen/socialIconWidth"
+        android:layout_height="@dimen/socialIconWidth"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"/>
+
+    <TextView
+        android:id="@+id/viewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/defaultMargin"
+        android:paddingTop="@dimen/countPaddingTop"
+        android:textSize="@dimen/postTextSize"/>
+
+    <ImageButton
+        android:id="@+id/likeBtn"
+        android:layout_width="@dimen/socialIconWidth"
+        android:layout_height="@dimen/socialIconWidth"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"/>
+
+    <TextView
+        android:id="@+id/likesCounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:paddingTop="@dimen/countPaddingTop"
+        android:textSize="@dimen/postTextSize"/>
+
+    <ImageButton
+        android:id="@+id/commentsBtns"
+        android:layout_width="@dimen/socialIconWidth"
+        android:layout_height="@dimen/socialIconWidth"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"/>
+
+    <TextView
+        android:id="@+id/commentsCounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:paddingTop="@dimen/countPaddingTop"
+        android:textSize="@dimen/postTextSize"/>
+
+    <ImageButton
+        android:id="@+id/shareBtn"
+        android:layout_width="@dimen/socialIconWidth"
+        android:layout_height="@dimen/socialIconHeight"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:paddingBottom="@dimen/socialIconMargin"/>
+</merge>

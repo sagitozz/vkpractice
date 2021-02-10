@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profAvatar"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/defaultMargin"
+        android:layout_height="@dimen/profile_shimmer_avatar_height"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:background="@color/shimmer_gray" />
+
+    <ImageView
+        android:id="@+id/profileField1"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/defaultMargin"
+        android:layout_height="@dimen/profile_shimmer_career_height"
+        android:layout_below="@+id/profAvatar"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/socialIconMargin"
+        android:background="@color/shimmer_gray"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profileField2"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/defaultMargin"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileField1"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/socialIconMargin"
+        android:background="@color/shimmer_gray"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profileField3"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/defaultMargin"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileField2"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/socialIconMargin"
+        android:background="@color/shimmer_gray"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/profileField4"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/defaultMargin"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileField3"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/socialIconMargin"
+        android:background="@color/shimmer_gray"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/postAvatar"
+        android:layout_width="@dimen/profile_shimmer_avatar_size"
+        android:layout_height="@dimen/profile_shimmer_avatar_size"
+        android:layout_below="@+id/profileField4"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:background="@color/shimmer_gray"
+        android:padding="@dimen/defaultMargin"
+        android:textSize="@dimen/description_text_size"/>
+
+    <TextView
+        android:id="@+id/postName"
+        android:layout_width="@dimen/shimmer_details_group_width"
+        android:layout_height="@dimen/profile_shimmer_text_height"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_toEndOf="@id/postAvatar"
+        android:layout_below="@+id/profileField4"
+        android:background="@color/shimmer_gray"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/postDate"
+        android:layout_width="@dimen/profile_shimmer_date_width"
+        android:layout_height="@dimen/profile_shimmer_text_height"
+        android:layout_below="@id/postName"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/socialIconMargin"
+        android:layout_toEndOf="@id/postAvatar"
+        android:background="@color/shimmer_gray"
+        android:textSize="@dimen/dateSize" />
+
+    <TextView
+        android:id="@+id/postText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_shimmer_post_height"
+        android:layout_below="@+id/postDate"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:background="@color/shimmer_gray"
+        android:padding="@dimen/defaultMargin"
+        android:textSize="@dimen/description_text_size"/>
+
+    <ImageView
+        android:id="@+id/postAvatar1"
+        android:layout_width="@dimen/profile_shimmer_avatar_size"
+        android:layout_height="@dimen/profile_shimmer_avatar_size"
+        android:layout_below="@+id/postText"
+        android:layout_marginTop="@dimen/socialIconMargin"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:background="@color/shimmer_gray"
+        android:padding="@dimen/defaultMargin"
+        android:textSize="@dimen/description_text_size"/>
+
+    <TextView
+        android:id="@+id/postName1"
+        android:layout_width="@dimen/shimmer_details_group_width"
+        android:layout_height="@dimen/profile_shimmer_text_height"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/socialIconMargin"
+        android:layout_toEndOf="@id/postAvatar"
+        android:layout_below="@+id/postText"
+        android:background="@color/shimmer_gray"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/postDate1"
+        android:layout_width="@dimen/profile_shimmer_date_width"
+        android:layout_height="@dimen/profile_shimmer_text_height"
+        android:layout_below="@id/postName1"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/socialIconMargin"
+        android:layout_toEndOf="@id/postAvatar"
+        android:background="@color/shimmer_gray"
+        android:textSize="@dimen/dateSize" />
+
+    <TextView
+        android:id="@+id/postText1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_shimmer_post_text_height"
+        android:layout_below="@+id/postDate1"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:background="@color/shimmer_gray"
+        android:padding="@dimen/defaultMargin"
+        android:textSize="@dimen/description_text_size"/>
+
+    <ImageView
+        android:id="@+id/postAvatar2"
+        android:layout_width="@dimen/profile_shimmer_avatar_size"
+        android:layout_height="@dimen/profile_shimmer_avatar_size"
+        android:layout_below="@+id/postText1"
+        android:layout_marginTop="@dimen/socialIconMargin"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:background="@color/shimmer_gray"
+        android:padding="@dimen/defaultMargin"
+        android:textSize="@dimen/description_text_size"/>
+
+    <TextView
+        android:id="@+id/postName2"
+        android:layout_width="@dimen/shimmer_details_group_width"
+        android:layout_height="@dimen/profile_shimmer_text_height"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/socialIconMargin"
+        android:layout_toEndOf="@id/postAvatar"
+        android:layout_below="@+id/postText1"
+        android:background="@color/shimmer_gray"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/postDate2"
+        android:layout_width="@dimen/profile_shimmer_date_width"
+        android:layout_height="@dimen/profile_shimmer_text_height"
+        android:layout_below="@id/postName2"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginBottom="@dimen/socialIconMargin"
+        android:layout_toEndOf="@id/postAvatar"
+        android:background="@color/shimmer_gray"
+        android:textSize="@dimen/dateSize" />
+
+    <TextView
+        android:id="@+id/postText2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_shimmer_post_height"
+        android:layout_below="@+id/postDate2"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:background="@color/shimmer_gray"
+        android:padding="@dimen/defaultMargin"
+        android:textSize="@dimen/description_text_size"/>
+
+</RelativeLayout>

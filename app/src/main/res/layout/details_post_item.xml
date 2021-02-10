@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/defaultMargin">
+
+    <com.vkpractice.app.ui.layouts.DetailsPostLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/titleBackGroundDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/defaultMargin"
+            android:background="@color/shimmer_gray" />
+
+        <ImageView
+            android:id="@+id/groupAvatarDetails"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginBottom="@dimen/defaultMargin"/>
+
+        <TextView
+            android:id="@+id/groupNameDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginBottom="@dimen/defaultMargin"
+            android:maxLines="1"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/postDateDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:layout_marginBottom="@dimen/defaultMargin"
+            android:textSize="@dimen/dateSize" />
+
+        <TextView
+            android:id="@+id/postTextDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:layout_marginEnd="@dimen/defaultMargin"
+            android:layout_marginBottom="@dimen/defaultMargin"
+            android:textSize="@dimen/default_text_size"/>
+
+        <ImageView
+            android:id="@+id/postImageDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/defaultMargin"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/viewsCountIconDetails"
+            android:layout_width="@dimen/socialIconWidth"
+            android:layout_height="@dimen/socialIconWidth"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:layout_marginEnd="@dimen/defaultMargin"
+            android:layout_marginBottom="@dimen/defaultMargin"
+            tools:src="@drawable/ic_eye" />
+
+        <TextView
+            android:id="@+id/viewCountDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:layout_marginEnd="@dimen/defaultMargin"
+            android:layout_marginBottom="@dimen/defaultMargin"
+            android:paddingTop="@dimen/countPaddingTop"
+            android:textSize="@dimen/postTextSize" />
+
+        <ImageButton
+            android:id="@+id/likeBtnDetails"
+            android:layout_width="@dimen/socialIconWidth"
+            android:layout_height="@dimen/socialIconWidth"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginEnd="@dimen/defaultMargin"
+            android:layout_marginBottom="@dimen/defaultMargin"
+            tools:src="@drawable/ic_like_gray" />
+
+        <TextView
+            android:id="@+id/likesCountsDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:layout_marginEnd="@dimen/defaultMargin"
+            android:layout_marginBottom="@dimen/defaultMargin"
+            android:paddingTop="@dimen/countPaddingTop"
+            android:textSize="@dimen/postTextSize" />
+
+        <ImageButton
+            android:id="@+id/shareBtnDetails"
+            android:layout_width="@dimen/socialIconWidth"
+            android:layout_height="@dimen/socialIconHeight"
+            android:layout_marginStart="@dimen/defaultMargin"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginEnd="@dimen/defaultMargin"
+            android:layout_marginBottom="@dimen/defaultMargin"
+            android:paddingBottom="@dimen/socialIconMargin"/>
+
+    </com.vkpractice.app.ui.layouts.DetailsPostLayout>
+
+</androidx.cardview.widget.CardView>
